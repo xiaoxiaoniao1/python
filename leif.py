@@ -23,6 +23,7 @@ with open("1.txt","r+") as f:
             valuelist.append(val)
         line=f.readline()
 print("去重后的结果")
+key_val_repeat=list(set(key_val_repeat))
 with open("1.txt","r+") as f:
     for line in f:
         for i in key_val_repeat:
