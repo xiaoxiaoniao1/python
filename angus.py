@@ -1,7 +1,7 @@
 result = set()
 with open("1.txt","r") as f:
   for line in f.readlines():
-    result.add(line)
+    result.add(line.replace(" ",""))
 
 keys = []
 for i in result:
