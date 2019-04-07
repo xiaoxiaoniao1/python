@@ -1,0 +1,7 @@
+习题一： 做一个文件查找器有目录/root/data/python/day1,其中包含文件movie list.txt python.txt,python pythongram.pdf,transformers.mp4编写程序：
+输入1、检索目录/root/data/python/day1，2、要查找的文件名、python结果：找到文件ython.txt，python pythongram.pdf，本题进阶 ：递归下级目录查找目标文件程序输入入：/root/data/ python结果找到python.txt,python program.pdf
+
+
+习题二:做一个文件查找器有目录/root/data/python/day1,其中包含文件movie list.txt python.txt,python pythongram.pdf,transformers.mp4,python.txt中包含内容talk is cheap , show me the code 编写程序输入：
+1检索目录/root/data/python/day1，2 要查找的文件内容：cheap结果找到python.txt,
+本体进阶：递归下级目录查找目标文件程序输入/root/data/python/，cheap结果找到python.txt
