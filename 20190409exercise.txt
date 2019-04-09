@@ -1,0 +1,9 @@
+初级爬虫
+目标站:http://www.baidu.com/
+抓取目标:百度logo
+从网页代码中提取以下img元素，拿到src中的字符串，抓取图片，保存到本地磁盘
+<img hidefocus="true" class="index-logo-src" src="//www.baidu.com/img/bd_logo1.png" width="270" height="129" usemap="#mp">
+
+相关库
+抓取网络资源相关库: urllib, urllib2 或 request
+解析网页代码库: xpath
