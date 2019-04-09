@@ -6,7 +6,7 @@ number=input("please you num:")
 print type(number)
 if number == 1:
     files = os.listdir(path) #得到文件夹下的所有文件名称
-    print files
+    print "\n".join(files)
 elif number == 2:
     file=raw_input("pleas you file name:")
     files = os.listdir(path)
