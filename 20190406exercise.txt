@@ -1,7 +1,24 @@
-习题一： 做一个文件查找器有目录/root/data/python/day1,其中包含文件movie list.txt python.txt,python pythongram.pdf,transformers.mp4编写程序：
-输入1、检索目录/root/data/python/day1，2、要查找的文件名、python结果：找到文件ython.txt，python pythongram.pdf，本题进阶 ：递归下级目录查找目标文件程序输入入：/root/data/ python结果找到python.txt,python program.pdf
+习题1：
+做一个文件查找器
+有目录/root/data/python/day1, 其中包含文件movie list.txt, python.txt, python program.pdf, transformers.mp4
+编写程序：
+输入：1.检索目录:/root/data/python/day1，2.要查找的文件名:python
+结果：找到python.txt, python program.pdf
+
+本题进阶：
+递归下级目录查找目标文件, 程序输入:/root/data, python
+结果：找到python.txt, python program.pdf
 
 
-习题二:做一个文件查找器有目录/root/data/python/day1,其中包含文件movie list.txt python.txt,python pythongram.pdf,transformers.mp4,python.txt中包含内容talk is cheap , show me the code 编写程序输入：
-1检索目录/root/data/python/day1，2 要查找的文件内容：cheap结果找到python.txt,
-本体进阶：递归下级目录查找目标文件程序输入/root/data/python/，cheap结果找到python.txt
+习题2：
+做一个文件内容查找器
+有目录/root/data/python/day1, 其中包含文件movie list.txt, python.txt, python program.pdf, transformers.mp4
+python.txt 中包含内容
+talk is cheap, show me the code.
+编写程序：
+输入：1.检索目录:/root/data/python/day1，2.要查找的文件内容:cheap
+结果：找到python.txt
+
+本题进阶：
+递归下级目录查找目标文件, 程序输入:/root/data, cheap
+结果：找到python.txt
