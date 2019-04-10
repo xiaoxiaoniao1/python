@@ -1,0 +1,16 @@
+#!/usr/bin/env python 
+#!_*_coding:utf-8_*_
+import os
+path = "/root/data/python/day1/" #文件夹目录
+number=input("please you num:")
+print type(number)
+if number == 1:
+    files = os.listdir(path) #得到文件夹下的所有文件名称
+    print "\n".join(files)
+elif number == 2:
+    file=raw_input("pleas you file name:")
+    files = os.listdir(path)
+    if file in files:
+        print file
+    else:
+        print("no find file")

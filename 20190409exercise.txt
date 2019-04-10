@@ -1,0 +1,19 @@
+初级爬虫
+目标站:http://www.baidu.com/
+抓取目标:百度logo
+从网页代码中提取以下img元素，拿到src中的字符串，抓取图片，保存到本地磁盘
+<img hidefocus="true" class="index-logo-src" src="//www.baidu.com/img/bd_logo1.png" width="270" height="129" usemap="#mp">
+
+相关库
+抓取网络资源相关库: urllib, urllib2 或 request
+解析网页代码库: xpath
+
+解题思路:
+1.使用urllib2发起请求拿到网页内容
+参考资料:https://docs.python.org/2/howto/urllib2.html
+2.使用xpath库解析html内容，得到img, 并取到src属性值，就拿到了logo的url
+参考资料:https://lxml.de/lxmlhtml.html
+3.再使用urllib2请求logo的url，拿到返回数据，保存
+
+另外一个解析网页的库, scrapy是个爬虫框架
+https://doc.scrapy.org/en/xpath-tutorial/topics/xpath-tutorial.html
