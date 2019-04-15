@@ -1,0 +1,4 @@
+1.类成员属性 必须要初始化
+
+TypeError: drink() takes exactly 1 argument (2 given)
+2.成员方法定义的时候，要加self参数, 作为成员方法的第一个参数
