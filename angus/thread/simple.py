@@ -7,5 +7,5 @@ def worker():
     print 'Worker'
 
 for i in range(5):
-    threading.Thread(target=worker)
+    t = threading.Thread(target=worker)
     t.start()
