@@ -17,15 +17,15 @@ class Url(Base):
 
     def save(self):
         cur = self.getdb().cursor()
-        #try:
-        sql = "insert into t_url (url, created_date) values ('%s', '%s')" % (self.url, self.created_date)
-        print sql
-        cur.execute(sql)
-        self.getdb().commit()
-        #except :
-            #traceback.print_exc()
-        ##finally:
-            #cur.close()
+        try:
+            sql = "insert into t_url (url, created_date) values ('%s', '%s')" % (self.url, self.created_date)
+            print sql
+            cur.execute(sql)
+            self.getdb().commit()
+        except:
+            traceback.print_exc()
+        finally:
+            cur.close()
 
 
     def __str__(self):
