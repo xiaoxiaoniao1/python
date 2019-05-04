@@ -10,7 +10,7 @@ class Url(Base):
     created_date = None
 
     def __init__(self, url, id = None, created_date = datetime.now().strftime("%Y-%m-%d %X")):
-        #super().__init__()
+        Base.__init__(self)
         self.id = id
         self.url = url
         self.created_date = created_date
