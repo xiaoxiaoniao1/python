@@ -24,3 +24,18 @@ b = filter(remove8, a)
 c = filter(lambda x: x != 8, a)
 print b
 print c
+
+#map
+print map(lambda x: x * x, a)
+
+d = []
+for i in a:
+    d.append(i * i)
+print d
+
+print [i * i for i in a]
+
+print map(lambda x: x != 8, a)
+
+#reduce
+print reduce(lambda x, y: x + x + y, a)
