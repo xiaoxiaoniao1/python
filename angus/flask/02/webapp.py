@@ -18,7 +18,7 @@ def artcle():
 
 @app.route("/<name>")
 def index(name):
-    content = b""
+    content = ""
     with open(name, "r") as f:
         content = f.read()
     return content
