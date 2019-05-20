@@ -1,0 +1,8 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+
+<div class="home">
+this is index </br>
+hello, {{ username }}
+</div>
+<div><a href="{{url_for('logout')}}">logout<a/></div>
