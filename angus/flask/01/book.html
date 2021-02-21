@@ -1,0 +1,19 @@
+<html>
+
+<body>
+<div id="book"></div>
+
+
+<script>
+var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      var books = JSON.parse(this.responseText)
+      document.getElementById("book").innerHTML = books.name;
+    }
+  };
+  xhttp.open("GET", "http://localhost/books", false);
+  xhttp.send();
+</script>
+</body>
+</html>
