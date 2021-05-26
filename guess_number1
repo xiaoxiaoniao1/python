@@ -1,0 +1,14 @@
+num = 10
+while True:
+    try:
+        input_number = int(input("请输入一个数字:"))
+        if input_number > num:
+            print("大了大了往小了猜")
+        elif input_number < num:
+            print("小了小了往大了了猜")
+        else:
+            print("恭喜你猜对了")
+            break
+
+    except ValueError:
+        print("请输入数字")
