@@ -1,0 +1,12 @@
+num = 10
+
+while True:
+    guess = input("请输入你的数字:")
+    if guess.isdigit():
+        guess = int(guess)
+        if guess > num:
+            print("大了大了往小了猜")
+        elif guess < num:
+            print("小了小了往大了猜")
+        else:
+            print("恭喜你猜对了")
