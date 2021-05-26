@@ -1,0 +1,20 @@
+num  = 10
+while True:
+    try:
+        guess_number = int(input("请输入一个数字:"))
+        if isinstance(guess_number,int):
+            if guess_number > num:
+                print("大了大了往小了猜")
+            elif guess_number < num:
+                print("小了小了你懂的")
+            else:
+                print("恭喜你猜对了数字",guess_number)
+                break
+        else:
+            print("no")
+    except ValueError:
+        print("请输入数字")
+    finally:
+        print("只支持数字列如:12")
+
+
